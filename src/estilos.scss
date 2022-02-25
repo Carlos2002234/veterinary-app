@@ -1,0 +1,366 @@
+$borde: #ced4da;
+$shadow: 0pc 1px 10px rgba(0, 0, 0, 0.5);
+$colorP: #ffffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+ 
+  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+  min-height: 100%;
+}
+
+.titleP {
+  display: block;
+  text-align: center;
+  font-size: 2.5rem;
+  color: $colorP;
+  font-weight: bolder;
+  padding: 40px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  display: block;
+  width: 90%;
+  min-height: 800px;
+
+  background-color: $colorP;
+  box-shadow: $shadow;
+  margin: 0 auto;
+  border-radius: 3px;
+
+  .container__title {
+    text-align: center;
+    padding: 35px;
+    font-weight: normal;
+    font-size: 2.3rem;
+  }
+
+  .form {
+    .form__label {
+      display: block;
+      font-weight: normal;
+      font-size: 1.5rem;
+      margin-left: 10%;
+      margin-bottom: 1em;
+    }
+
+    .form__input {
+      display: block;
+      padding: 8px;
+      width: 80%;
+      margin: 0 auto;
+      border: 1px solid $borde;
+      outline: none;
+      border-radius: 3px;
+      margin-bottom: 2em;
+    }
+
+    .form__text {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      border: 1px solid $borde;
+      outline: none;
+      border-radius: 3px;
+      margin-bottom: 2em;
+      height: 150px;
+    }
+  }
+  .titleAdministrador {
+    text-align: center;
+    color: #000;
+    font-weight: normal;
+    font-size: 2.3rem;
+  }
+
+  .containerInfo {
+    li {
+      list-style: none;
+    }
+    margin-left: 10%;
+    .containerInfo__nombre {
+      font-weight: bolder;
+      font-size: 2.3rem;
+      padding: 3px 0;
+    }
+
+    .containerInfo__datos {
+      font-weight: normal;
+      padding: 1px 0;
+      width: 200px;
+      overflow: hidden;
+    }
+
+    .containerInfo__datos span {
+      font-size: 1.5rem;
+      font-weight: bolder;
+    }
+  }
+}
+
+//media queries
+
+/* Tablets y phablets */
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px) {
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    min-height: 500px;
+
+    background-color: $colorP;
+    box-shadow: $shadow;
+    margin: 0 auto;
+    border-radius: 3px;
+
+    .container__title {
+      text-align: left;
+      padding: 35px;
+      font-weight: normal;
+      font-size: 2.3rem;
+    }
+
+    .form {
+      position: relative;
+      .form__input {
+        display: block;
+        padding: 8px;
+        width: 200px;
+        margin: 0 auto;
+        border: 1px solid $borde;
+        outline: none;
+        border-radius: 3px;
+        margin-bottom: 0em;
+        position: relative;
+        left: 120px;
+        top: -40px;
+   
+      }
+
+      .form__text {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        border: 1px solid $borde;
+        outline: none;
+        border-radius: 3px;
+        height: 100px;
+        margin-bottom: 0em;
+        position: relative;
+        left: 120px;
+        top: -40px;
+       
+      }
+    }
+    .titleAdministrador {
+      padding: 35px;
+      font-weight: normal;
+      font-size: 2.3rem;
+    }
+
+    .containerInfo {
+      li {
+        list-style: none;
+      }
+      margin-left: 20%;
+      .containerInfo__nombre {
+        font-weight: bolder;
+        font-size: 2.3rem;
+        padding: 3px 0;
+      }
+
+      .containerInfo__datos {
+        font-weight: normal;
+        padding: 1px 0;
+        width: 200px;
+        overflow: hidden;
+      }
+
+      .containerInfo__datos span {
+        font-size: 1.5rem;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    min-height: 500px;
+
+    background-color: $colorP;
+    box-shadow: $shadow;
+    margin: 0 auto;
+    border-radius: 3px;
+
+    .container__title {
+      text-align: left;
+      padding: 35px;
+      font-weight: normal;
+      font-size: 2.3rem;
+    }
+
+    .form {
+      position: relative;
+      .form__input {
+        display: block;
+        padding: 8px;
+        width: 200px;
+        margin: 0 auto;
+        border: 1px solid $borde;
+        outline: none;
+        border-radius: 3px;
+        margin-bottom: 0em;
+        position: relative;
+        left: 120px;
+        top: -40px;
+      }
+
+      .form__text {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid $borde;
+        outline: none;
+        border-radius: 3px;
+        height: 100px;
+        margin-bottom: 0em;
+        position: relative;
+        left: 150px;
+        top: -40px;
+      }
+    }
+    .titleAdministrador {
+      padding: 35px;
+      font-weight: normal;
+      font-size: 2.3rem;
+    }
+
+    .containerInfo {
+      li {
+        list-style: none;
+      }
+      margin-left: 10%;
+      .containerInfo__nombre {
+        font-weight: bolder;
+        font-size: 2.3rem;
+        padding: 3px 0;
+      }
+
+      .containerInfo__datos {
+        font-weight: normal;
+        padding: 1px 0;
+        width: 200px;
+        overflow: hidden;
+      }
+
+      .containerInfo__datos span {
+        font-size: 1.5rem;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    min-height: 500px;
+
+    background-color: $colorP;
+    box-shadow: $shadow;
+    margin: 0 auto;
+    border-radius: 3px;
+
+    .container__title {
+      text-align: left;
+      padding: 35px;
+      font-weight: normal;
+      font-size: 2.3rem;
+    }
+
+    .form {
+      position: relative;
+      .form__input {
+        display: block;
+        padding: 8px;
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid $borde;
+        outline: none;
+        border-radius: 3px;
+        margin-bottom: 0em;
+        position: relative;
+        left: 130px;
+        top: -40px;
+        border: 1px solid red;
+      }
+
+      .form__text {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid $borde;
+        outline: none;
+        border-radius: 3px;
+        height: 100px;
+        margin-bottom: 0em;
+        position: relative;
+        left: 130px;
+        top: -40px;
+        border: 1px solid red;
+      }
+    }
+    .titleAdministrador {
+      padding: 35px;
+      font-weight: normal;
+      font-size: 2.3rem;
+    }
+
+    .containerInfo {
+      li {
+        list-style: none;
+      }
+      margin-left: 20%;
+      .containerInfo__nombre {
+        font-weight: bolder;
+        font-size: 2.3rem;
+        padding: 3px 0;
+      }
+
+      .containerInfo__datos {
+        font-weight: normal;
+        padding: 1px 0;
+        width: 200px;
+        overflow: hidden;
+      }
+
+      .containerInfo__datos span {
+        font-size: 1.5rem;
+        font-weight: bolder;
+      }
+    }
+  }
+}
