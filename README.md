@@ -30,8 +30,8 @@ A simple CRUD app to schedule vet appointments
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Carlos2002234/movies-app.git
-   cd movie-app
+   git clone https://github.com/Carlos2002234/movies-app.git](https://github.com/Carlos2002234/veterinary-app.git
+   cd vetApp
    npm i
    npm run start 
 
